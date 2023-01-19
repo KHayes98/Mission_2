@@ -35,7 +35,7 @@ namespace Mission_2
                 rollTotals[i] = die_1 + die_2;
             }
 
-            int[] numCounter = new int[11];
+            float[] numCounter = new float[11];
 
 
             for (int i_inner = 0; i_inner < 11; i_inner++)
@@ -89,7 +89,7 @@ namespace Mission_2
                     }
 
                 }
-                Console.WriteLine(i_inner + 2 + ": " + numCounter[i_inner]/(i_inner + 1));
+                Console.WriteLine(i_inner + 2 + ": " + (numCounter[i_inner]/(i_inner + 1) / diceRolls * 100) + "%");
             }
 
         }
