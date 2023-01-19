@@ -38,7 +38,7 @@ namespace Mission_2
                 rollTotals[i] = die_1 + die_2;
             }
 
-            int count_2 = 0;
+            /* int count_2 = 0;
             int count_3 = 0;
             int count_4 = 0;
             int count_5 = 0;
@@ -48,71 +48,79 @@ namespace Mission_2
             int count_9 = 0;
             int count_10 = 0;
             int count_11 = 0;
-            int count_12 = 0;
+            int count_12 = 0; */
 
-            for (int i = 0; i < diceRolls; i++)
+            int[] numCounter = new int[10];
+
+            for (int i_inner = 0; i_inner < 10; i_inner++)
             {
-                //Console.WriteLine(i + ": " + rollTotals[i]);
 
-                if (rollTotals[i] == 2)
+                for (int i = 0; i < diceRolls; i++)
                 {
-                    count_2++;
+                    //Console.WriteLine(i + ": " + rollTotals[i]);
+
+
+                    if (rollTotals[i] == 2)
+                    {
+                        numCounter[0]++;
+                    }
+
+                    if (rollTotals[i] == 3)
+                    {
+                        numCounter[1]++;
+                    }
+
+                    if (rollTotals[i] == 4)
+                    {
+                        numCounter[2]++;
+                    }
+
+                    if (rollTotals[i] == 5)
+                    {
+                        numCounter[3]++;
+                    }
+
+                    if (rollTotals[i] == 6)
+                    {
+                        numCounter[4]++;
+                    }
+
+                    if (rollTotals[i] == 7)
+                    {
+                        numCounter[5]++;
+                    }
+
+                    if (rollTotals[i] == 8)
+                    {
+                        numCounter[6]++;
+                    }
+
+                    if (rollTotals[i] == 9)
+                    {
+                        numCounter[7]++;
+                    }
+
+                    if (rollTotals[i] == 10)
+                    {
+                        numCounter[8]++;
+                    }
+
+                    if (rollTotals[i] == 11)
+                    {
+                        numCounter[9]++;
+                    }
+
+                    if (rollTotals[i] == 12)
+                    {
+                        numCounter[10]++;
+                    }
+
                 }
 
-                if (rollTotals[i] == 3)
-                {
-                    count_3++;
-                }
-
-                if (rollTotals[i] == 4)
-                {
-                    count_4++;
-                }
-
-                if (rollTotals[i] == 5)
-                {
-                    count_5++;
-                }
-
-                if (rollTotals[i] == 6)
-                {
-                    count_6++;
-                }
-
-                if (rollTotals[i] == 7)
-                {
-                    count_7++;
-                }
-
-                if (rollTotals[i] == 8)
-                {
-                    count_8++;
-                }
-
-                if (rollTotals[i] == 9)
-                {
-                    count_9++;
-                }
-
-                if (rollTotals[i] == 10)
-                {
-                    count_10++;
-                }
-
-                if (rollTotals[i] == 11)
-                {
-                    count_11++;
-                }
-
-                if (rollTotals[i] == 12)
-                {
-                    count_12++;
-                }
-
-                Console.WriteLine(count_6);
+                Console.WriteLine(i_inner + ": " + numCounter[i_inner]);
             }
 
-            Console.WriteLine("2: " + ((count_2 / diceRolls) * 100));
+            /* Console.WriteLine("2: " + ((count_2 / diceRolls) * 100));
             Console.WriteLine("3: " + ((count_3 / diceRolls) * 100));
             Console.WriteLine("4: " + ((count_4 / diceRolls) * 100));
             Console.WriteLine("5: " + ((count_5 / diceRolls) * 100));
@@ -122,7 +130,7 @@ namespace Mission_2
             Console.WriteLine("9: " + ((count_9 / diceRolls) * 100));
             Console.WriteLine("10: " + ((count_10 / diceRolls) * 100));
             Console.WriteLine("11: " + ((count_11 / diceRolls) * 100));
-            Console.WriteLine("12: " + ((count_12 / diceRolls) * 100));
+            Console.WriteLine("12: " + ((count_12 / diceRolls) * 100)); */
 
 
 
