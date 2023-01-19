@@ -92,6 +92,8 @@ namespace Mission_2
                 Console.WriteLine(i_inner + 2 + ": " + (numCounter[i_inner]/(i_inner + 1) / diceRolls * 100) + "%");
             }
 
+            Console.WriteLine("Thank you for using the dice throwing simulator. Goodbye!");
+
         }
     }
 }
